@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Set up variants, product information, media and purchase controls.">
+  <title>Products and purchasing | OBJECT Merchant Guide</title>
+  <link rel="stylesheet" href="assets/docs.css">
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to content</a>
+  <header class="masthead">
+    <div class="masthead-inner">
+      <a class="brand" href="index.html"><span>OBJECT</span><span>Merchant guide</span></a>
+      <p class="version">0.1.0 development preview</p>
+    </div>
+  </header>
+  <div class="shell">
+    <nav class="guide-nav" aria-label="Guide">
+      <ul>
+        <li><a href="index.html">Overview</a></li>
+<li><a href="installation.html">Installation &amp; presets</a></li>
+<li><a href="navigation.html">Navigation &amp; search</a></li>
+<li><a href="sections.html">Sections &amp; editor</a></li>
+<li><a href="products.html" aria-current="page">Products &amp; purchasing</a></li>
+<li><a href="troubleshooting.html">Troubleshooting</a></li>
+<li><a href="support.html">Support</a></li>
+      </ul>
+    </nav>
+    <main id="main-content" tabindex="-1">
+      <header class="page-heading">
+        <h1>Products and purchasing</h1>
+        <p>Set up variants, product information, media and purchase controls.</p>
+      </header>
+      <div class="reading-layout">
+        <nav class="page-index" aria-label="On this page"><p>On this page</p><ul><li><a href="#variants">Set up products and variants</a></li>
+<li><a href="#gallery">Check the product gallery</a></li>
+<li><a href="#information">Add materials, dimensions and policies</a></li>
+<li><a href="#quick-buy">Choose where to show Quick Buy</a></li>
+<li><a href="#sticky-purchase">Test Sticky Purchase</a></li>
+<li><a href="#preview-purchase">Check cart and checkout setup</a></li></ul></nav>
+        <div class="reading">
+<section>
+  <h2 id="variants">Set up products and variants</h2>
+  <ol>
+    <li>In Shopify <strong>Products</strong>, enter the title, description and media. Set each variant’s option values, price, compare-at price when applicable, and inventory. Enable the product for the Online Store.</li>
+    <li>Assign an image to each variant where the finish or size should change the photograph. Add descriptive alt text to product images and inspect unusual crops at mobile width.</li>
+    <li>In the <strong>Product</strong> section, keep <strong>Price</strong>, <strong>Variant picker</strong> and <strong>Buy buttons</strong> for a configurable product. Check available and sold-out selections. A variant link supplied by Shopify can preselect the intended choice.</li>
+  </ol>
+  <p>Try a simple single-variant item, an item with multiple finishes and a sold-out choice. For example, open a listing with Matte and Gloss finishes and confirm the selected finish, photo, price and availability all agree before adding it. <a href="https://help.shopify.com/en/manual/products/product-media">Shopify product media guide</a></p>
+</section>
+<section>
+  <h2 id="gallery">Check the product gallery</h2>
+  <p>Use the previous and next controls or the media thumbnails to browse. When an image is active, <strong>Inspect photo</strong> opens image zoom. Use Escape to close it. Videos and models have their own controls.</p>
+  <p>When two variants have the same explicitly assigned image, choosing either should restore that image after you browse away. If both variants have only the same product fallback, the gallery can keep the slide you were already viewing. Test both cases when they occur in your catalogue.</p>
+  <p>Use <strong>Animate gallery changes</strong> in the product section to control gallery animation. Reduced-motion preferences take precedence.</p>
+</section>
+<section>
+  <h2 id="information">Add materials, dimensions and policies</h2>
+  <p>Use <strong>Product fact</strong> for a short label and value. The standard template includes Material and Dimensions blocks. Use <strong>Information disclosure</strong> for care or delivery details, and attach a store policy page using <strong>Linked page</strong> when useful.</p>
+  <p>For per-product content, create and populate a product metafield in the <code>custom</code> namespace. For example, use <code>custom.material</code> and enter only <code>material</code> under <strong>Custom metafield key</strong>. Leave the block’s typed <strong>Value</strong> empty so the metafield is used. For the information block, typed <strong>Content</strong> takes precedence over its metafield.</p>
+  <p>Leave empty information blocks in the editor only if you intend to populate them. The storefront can hide them when no content or page is assigned. If you use an older template with <strong>Use legacy product layout</strong>, add the core product blocks in a duplicate before turning that option off.</p>
+</section>
+<section>
+  <h2 id="quick-buy">Choose where to show Quick Buy</h2>
+  <p>Enable <strong>Show Quick Buy</strong> in a collection, <strong>Featured collection</strong> or <strong>Shoppable Editorial Scene</strong>. Direct add requires an available product with one default variant, standard quantity rules and no gift-card or selling-plan requirements or choices. A product needing configuration can still lead to its full product page.</p>
+  <p>Test an eligible item on a phone. Add it once and confirm one cart line with the intended quantity. Test a multi-option item separately and confirm shoppers can reach its full purchase form.</p>
+</section>
+<section>
+  <h2 id="sticky-purchase">Test Sticky Purchase</h2>
+  <p>In the main <strong>Product</strong> section, enable <strong>Show sticky purchase on mobile</strong>. Scroll below the buy form while you are still within the product section. The mobile bar can show price and availability. It sends shoppers to the main options when a selection, selling plan or gift-card recipient needs attention.</p>
+  <p>Choose a variant, check the bar reflects the selection, and confirm that the item added matches the chosen variant and quantity. Repeat with a sold-out choice. If the bar never appears, check it on a narrow phone preview and confirm the main <strong>Buy buttons</strong> block exists.</p>
+</section>
+<section>
+  <h2 id="preview-purchase">Check cart and checkout setup</h2>
+  <ol>
+    <li>Add an available item in the preview. Compare the quantity and totals in the drawer and the full cart. Update the quantity, then remove the item.</li>
+    <li>Where enabled, check order notes, discounts, selling plans, pickup locations and gift-card recipient fields with eligible test products. Shopify controls the relevant product, payment and location configuration.</li>
+    <li>Check <strong>Show accelerated checkout buttons</strong> and <strong>Show Shop Pay Installments</strong> where relevant. Provider eligibility controls availability.</li>
+    <li>Repeat in each market and language you plan to use. Verify labels and local price formatting, and stop before payment while testing a preview.</li>
+  </ol>
+</section>
+        </div>
+      </div>
+    </main>
+  </div>
+  <footer class="footer">
+    <div class="footer-inner"><span>OBJECT</span><span>Bikeshed Studios</span></div>
+  </footer>
+</body>
+</html>
